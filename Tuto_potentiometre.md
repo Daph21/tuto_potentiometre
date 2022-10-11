@@ -34,16 +34,16 @@ basic.forever(function () {
  
  
 ## Step 4
-Créer une autre variable. Celle-ci nomme-la Khz (Kilo Hertz). Ajoute le bloc ``||variable:définir Khz|``  au bloc ``||basic: toujours|`` à la suite du bloc ``||variable:définir Hz|``
+Créer une autre variable. Celle-ci nomme-la kHz (Kilo Hertz). Ajoute le bloc ``||variable:définir kHz|``  au bloc ``||basic: toujours|`` à la suite du bloc ``||variable:définir Hz|``
 
  
 ```blocks
-let Khz = 0
+let kHz = 0
 let Hz = 0
 music.setVolume(100)
 basic.forever(function () {
     Hz = 0
-    Khz = 0
+    kHz = 0
 })
 ```
  
@@ -53,12 +53,12 @@ Ajoute le bloc``||math: 0 x 0 ||`` au bloc  le bloc ``||variable:définir Hz|``
 Ajouter un deuxième bloc ``||math: 0 / 0 ||``  dans le deuxième espace.
  
 ```blocks
-let Khz = 0
+let kHz = 0
 let Hz = 0
 music.setVolume(100)
 basic.forever(function () {
     Hz = 0 * (0 / 0)
-    Khz = 0
+    kHz = 0
 })
 
  
@@ -71,28 +71,28 @@ Change la valeur à la suite du signe de division pour la valeur 1023.
 
 
 ```blocks
-let Khz = 0
+let kHz = 0
 let Hz = 0
 music.setVolume(100)
 basic.forever(function () {
     Hz = pins.analogReadPin(AnalogPin.P0) * (5000 / 1023)
-    Khz = 0
+    kHz = 0
 })
 
 ```
 ## Step 7
- Ajoute le bloc ``||math: 0 / 0 ||`` dans le bloc ``||variable:définir Khz|``
+ Ajoute le bloc ``||math: 0 / 0 ||`` dans le bloc ``||variable:définir kHz|``
  Ajoute le bloc ``||variable: Hz|`` dans le premier espace du bloc. 
 Change la valeur ``0`` à la suite du signe de division par la valeur ``1000`` 
 
 
 ```blocks
-let Khz = 0
+let kHz = 0
 let Hz = 0
 music.setVolume(100)
 basic.forever(function () {
     Hz = pins.analogReadPin(AnalogPin.P0) * (5000 / 1023)
-    Khz = Hz / 1000
+    kHz = Hz / 1000
 })
 ```
 
@@ -101,12 +101,12 @@ Ajoute le bloc ``||basic: montrer nombre||``
 Ajoute le bloc ``||variable: Khz|`` dans le bloc  ``||basic: montrer nombre||``
 
 ```blocks
-let Khz = 0
+let kHz = 0
 let Hz = 0
 music.setVolume(100)
 basic.forever(function () {
     Hz = pins.analogReadPin(AnalogPin.P0) * (5000 / 1023)
-    Khz = Hz / 1000
+    kHz = Hz / 1000
     basic.showNumber(Khz)
 })
 })
@@ -118,12 +118,12 @@ Ajouter le bloc ``||variable: Hz|`` dans fréquence départ et fréquence fin.
 Change la valeur de la durée à ``3000``
 
 ```blocks
-let Khz = 0
+let kHz = 0
 let Hz = 0
 music.setVolume(100)
 basic.forever(function () {
     Hz = pins.analogReadPin(AnalogPin.P0) * (5000 / 1023)
-    Khz = Hz / 1000
+    kHz = Hz / 1000
     basic.showNumber(Khz)
     music.playSoundEffect(music.createSoundEffect(
     WaveShape.Sine,
