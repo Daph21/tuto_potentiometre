@@ -1,4 +1,3 @@
-# Tuto_potentiometre
 # Tutoriel pour l'utilisation du potemtiomètre et le son
  
 ## Step 1
@@ -17,13 +16,19 @@ basic.forever(function () {
 ```
  
 ## Step 3
-Créer la variable Hz (Hertz). Ajoute le bloc ``||variable:définir Hz|``  au bloc ``||basic: toujours|`` 
+Ajoute le bloc ``||math: 0 x 0 ||`` au bloc  ``||variable: définir Hz à ||`` et un autre bloc... 
+
 
 ```blocks
+
 let Hz = 0
+
 music.setVolume(100)
+
 basic.forever(function () {
-    Hz = 0
+
+    Hz = 0 * (0 / 0)
+
 })
 ```
  
@@ -44,8 +49,8 @@ basic.forever(function () {
  
 ## Step 5
  
-Ajoute le bloc``||maths: 0 * 0 ||`` au bloc  le bloc ``||variable:définir Hz|``
-Ajouter un deuxième bloc ``||maths: 0 / 0 ||`` dans le deuxième espace.
+Ajoute le bloc``||math: 0 x 0 ||`` au bloc  le bloc ``||variable:définir Hz|``
+Ajouter un deuxième bloc ``||math: 0 / 0 ||``  dans le deuxième espace.
  
 ```blocks
 let Khz = 0
@@ -76,7 +81,7 @@ basic.forever(function () {
 
 ```
 ## Step 7
- Ajoute le bloc ``||maths: 0 / 0 ||`` dans le bloc ``||variable:définir Khz|``
+ Ajoute le bloc ``||math: 0 / 0 ||`` dans le bloc ``||variable:définir Khz|``
  Ajoute le bloc ``||variable: Hz|`` dans le premier espace du bloc. 
 Change la valeur ``0`` à la suite du signe de division par la valeur ``1000`` 
 
